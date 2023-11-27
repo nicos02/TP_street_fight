@@ -1,3 +1,9 @@
+<?php 
+include 'models/config.php';
+include 'models/database.php';
+?>
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -7,7 +13,7 @@
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
    <title>Tp StreetFight</title>
 </head>
-<body class="bg-dark">
+<body>
    <header>
       <?php include 'views/navbar/navbar.php'; ?>
    </header>
