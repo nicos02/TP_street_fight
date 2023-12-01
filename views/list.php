@@ -16,7 +16,7 @@
          </tr>
       </thead>
       <tbody>
-      <?php foreach ($personnages as $personnages) : ?> <!-- Parcourir chaque élément de l'array $personnagess et stocker dans la variable $personnages -->
+      <?php foreach ($personnages as $personnages) : ?> <!-- Parcourir chaque élément de l'array $personnages et stocker dans la variable $personnages -->
       <tr>
          <td><?php echo $personnages['name']; ?></td> <!-- Affichage du nom du personnage-->
          <td><?php echo $personnages['atk']; ?></td> <!-- Affichage de la force du personnage-->

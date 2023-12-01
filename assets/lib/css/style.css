@@ -1,3 +1,5 @@
+/* Page Create */
+
 .form_container {
    margin-top: 7rem;
 }
@@ -14,4 +16,9 @@
 .form_container button {
    border-radius: 20px;
    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.image-fight,
+.img_home {
+   transform: scaleX(-1);
 }
