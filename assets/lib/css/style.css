@@ -22,3 +22,7 @@
 .img_home {
    transform: scaleX(-1);
 }
+
+.hidden {
+    display: none;
+  }

@@ -28,7 +28,10 @@ if (isset($_GET['create'])) {
 } elseif (isset($_GET['list'])) {
    // Sinon, si le paramètre GET 'list' est défini, inclure la vue 'list.php'
    include 'views/list.php';
-} else {
+} elseif (isset($_GET['id'])) {
+   include 'views/personnage.php';
+}
+ else {
    // Sinon, inclure la vue par défaut 'homepage.php'
    include 'views/home/homepage.php';
 }
