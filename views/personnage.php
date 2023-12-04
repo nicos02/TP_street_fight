@@ -19,7 +19,7 @@ if ($personnage) {
    // Afficher les valeurs "atk", "life" et "color" dans un nouveau tableau
 ?>
 
-   <h3 class="text-center mt-5">Détails du personnage</h3>
+   <h3 class="text-center mt-5">Détails du personnage <?php echo $personnage['name']; ?></h3>
    <table class="table table-hover mt-5 mb-5 mx-auto w-50 shadow">
       <thead class="table-dark">
          <tr>

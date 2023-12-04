@@ -13,7 +13,7 @@ class update extends Db
    public function getIdFromUrl()
    {
        // Récupération de l'URL courante
-       $url = $_SERVER['REQUEST_URI'];
+       $url = $_SERVER['REQUEST_URI']; // $_SERVER['REQUEST_URI'] retourne l'URL courante
        
        // Récupération des paramètres de l'URL
        $params = parse_url($url, PHP_URL_QUERY); // parse_url() retourne un tableau associatif et php_url_query() retourne une chaine

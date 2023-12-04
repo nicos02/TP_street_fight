@@ -20,13 +20,21 @@ if ($update->exists($id)) {
 
 // Récupérer les valeurs du formulaire soumis (le cas échéant)
 if ($_POST) {
-   $name = isset($_POST['name']) ? $_POST['name'] : $name;
-   $atk = isset($_POST['atk']) ? $_POST['atk'] : $atk;
-   $life = isset($_POST['life']) ? $_POST['life'] : $life;
-   $color = isset($_POST['color']) ? $_POST['color'] : $color;
+    // Vérifie l'existence de la clé 'name' dans le tableau $_POST, sinon utilise la valeur existante de $name
+    $name = isset($_POST['name']) ? $_POST['name'] : $name;
+    
+    // Vérifie l'existence de la clé 'atk' dans le tableau $_POST, sinon utilise la valeur existante de $atk
+    $atk = isset($_POST['atk']) ? $_POST['atk'] : $atk;
+    
+    // Vérifie l'existence de la clé 'life' dans le tableau $_POST, sinon utilise la valeur existante de $life
+    $life = isset($_POST['life']) ? $_POST['life'] : $life;
+    
+    // Vérifie l'existence de la clé 'color' dans le tableau $_POST, sinon utilise la valeur existante de $color
+    $color = isset($_POST['color']) ? $_POST['color'] : $color;
 
-   // Appeler la méthode de mise à jour
-   $update->update($id, $name, $atk, $life, $color);
+    // Appelle la méthode update de l'objet $update avec les valeurs récupérées
+    $update->update($id, $name, $atk, $life, $color);
 
-   $message = 'Le formulaire a été modifié avec succès. Redirection en cours...';
+    // Définition du message de succès
+    $message = 'Le formulaire a été modifié avec succès. Redirection en cours...';
 }
