@@ -26,6 +26,7 @@ if ($personnage) {
             <th>Atk</th>
             <th>Life</th>
             <th>Color</th>
+            <th>Modifier</th>
          </tr>
       </thead>
       <tbody>
@@ -33,6 +34,7 @@ if ($personnage) {
             <td><?php echo $personnage['atk']; ?></td>
             <td><?php echo $personnage['life']; ?></td>
             <td><?php echo $personnage['color']; ?></td>
+            <td><a href="index.php?update=<?php echo $id; ?>" class="btn btn-primary">Modifier</a></td>
          </tr>
       </tbody>
    </table>

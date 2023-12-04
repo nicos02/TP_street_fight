@@ -29,7 +29,12 @@ if (isset($_GET['create'])) {
    // Sinon, si le paramètre GET 'list' est défini, inclure la vue 'list.php'
    include 'views/list.php';
 } elseif (isset($_GET['id'])) {
+   // Sinon, si le paramètre GET 'id' est défini, inclure la vue 'personnage.php'
    include 'views/personnage.php';
+} elseif (isset($_GET['update'])) {
+   // Sinon, si le paramètre GET 'update' est défini, inclure la vue 'update.php'
+   include 'views/update.php';
+   
 }
  else {
    // Sinon, inclure la vue par défaut 'homepage.php'

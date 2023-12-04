@@ -1,4 +1,3 @@
-<!-- views/form.php -->
 <h1 class="text-center mt-5">Création du personnage</h1>
 <div class="form_container">
       <form class="text-center mt-5 form" id="form_create" action="controller/insert_controller.php" method="post">
