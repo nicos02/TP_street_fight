@@ -26,6 +26,5 @@ public function getAll() {
    // Récupérer tous les résultats de la requête sous forme de tableau associatif
    return $sth->fetchAll(PDO::FETCH_ASSOC);
 }
-   
 }
 ?>
